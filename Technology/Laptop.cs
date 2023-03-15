@@ -10,9 +10,14 @@ namespace Technology
     {
         public int NumOfUsb { get; set; }
 
-        public Laptop(double ram, double screenSize, string operatingSystem) : base(ram, screenSize, operatingSystem)
+        public Laptop(int numOfUsb, double ram, double screenSize, string operatingSystem) : base(ram, screenSize, operatingSystem)
         {
+            NumOfUsb = numOfUsb;
+        }
 
+        public void stuffCheetos(int numOfCheetos)
+        {
+            NumOfUsb -= numOfCheetos;
         }
     }
 
